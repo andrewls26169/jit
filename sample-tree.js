@@ -7,16 +7,18 @@ function init(){
     //the type of the node to be plotted and its dimension.
     var json = [{
         "id": "node0",
-        "name": "node0 name 2",
+        "name": "node0 name",
         "data": {
             "$dim": 16.759175934208628,
+            "$height": 50,
             "$type": "ellipse",
             "some other key": "some other value"
         },
         "adjacencies": [{
             "nodeTo": "node1",
             "data": {
-                "weight": 1
+                "weight": 1,
+                "$lineWidth": 10
             }
         }, {
             "nodeTo": "node2",
@@ -225,7 +227,7 @@ function init(){
         
         Edge: {
             overridable: true,
-            color: "#088"
+            color: "#0f0"
         },
         //calculate nodes offset
         offset: 0.2,
@@ -240,7 +242,8 @@ function init(){
         onBeforePlotLine: function(adj){
             //Set random lineWidth for edges.
             if (!adj.data.$lineWidth) 
-                adj.data.$lineWidth = Math.random() * 7 + 1;
+                // adj.data.$lineWidth = Math.random() * 7 + 1;
+                adj.data.$lineWidth = 1;
         },
         
         onBeforeCompute: function(node){

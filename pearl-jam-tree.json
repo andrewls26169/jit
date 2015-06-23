@@ -1,17 +1,12 @@
-function init(){
-    var json = {
+{
         "id": "190_0",
         "name": "Pearl Jam",
-        // "data": {"$dim": 30, "$type": "triangle"},
 
         "data": {
             "$dim": 16.759175934208628,
-            "$hight": 50,
+            "$height": 50,
             "$type": "ellipse",
-            "type": "star",
-            // "some other key": "some other value"
             "$color": "#83548B",
-            // "$type": "triangle",
             "$dim": 10
         },
         "children": [{
@@ -418,114 +413,4 @@ function init(){
             }]
         }],
         "data": []
-    };
-    var infovis = document.getElementById('infovis');
-    var w = infovis.offsetWidth, h = infovis.offsetHeight;
-    var effectHash = {};
-    var nodesCache = {};
-    var N = null;
-    $jit();
-    ht = new Hypertree({    
-        'injectInto': 'infovis',
-        'width': w,
-        'height': h,
-
-        Node: {
-          overridable:true,
-          'transform': false,
-            color: "#f00",
-            "type": "triangle"
-        },
-        Edge: {
-          overridable:true,
-          color: "#0f0"
-        },
-        onBeforeCompute: function(node){
-            Log.write("centering");
-            N = null;
-        },
-        
-        onCreateLabel: function(domElement, node){
-            domElement.innerHTML = node.name;
-            domElement.onclick = function () {
-                ht.onClick(node.id);
-            };
-        },
-        
-         //Take the left style property and substract half of the label actual width.
-        onPlaceLabel: function(tag, node){
-            var width = tag.offsetWidth;
-            var intX = parseInt(tag.style.left);
-            intX -= width / 2;
-            tag.style.left = intX + 'px';
-        },
-        
-        onAfterCompute: function(){
-            Log.write("done");
-            var node = ht.graph.getClosestNodeToOrigin("current");
-            var html = "<h4>" + node.name + "</h4><b>Connections:</b>";
-            html += "<ul>";
-            node.eachAdjacency(function(adj){
-                var child = adj.nodeTo;
-                if (child.data) {
-                    var rel = (child.data.band == node.name) ? child.data.relation : node.data.relation;
-                    html += "<li>" + child.name + " " + "<div class=\"relation\">(relation: " + rel + ")</div></li>";
-                }
-            });
-            html += "</ul>";
-            $jit.id('inner-details').innerHTML = html;
-        }
-    });
-    //load tree from tree data.
-    
-    ht.loadJSON(json);
-    ht.graph.addAdjacence({
-        'id': '236585_30'
-    }, {
-        'id': '236583_23'
-    }, null);
-    ht.graph.addAdjacence({
-        'id': '236585_30'
-    }, {
-        'id': '4619_46'
-    }, null);
-    
-    ht.compute();
-    ht.plot();
-    ht.controller.onAfterCompute();
-    
-    var button = document.getElementById('remove');
-    button.onclick = function() {
-    //remove an entire subtree by removing an array of nodes.
-        var stype = document.getElementById('select-type');
-        var sindex = stype.selectedIndex;
-        var type = stype.options[sindex].text;
-        
-        var sduration = document.getElementById('select-duration');
-        var sdindex = sduration.selectedIndex;
-        var duration = parseInt(sduration.options[sdindex].text);
-
-        var fpstype = document.getElementById('select-fps');
-        var fpsindex = fpstype.selectedIndex;
-        var fps = parseInt(fpstype.options[fpsindex].text);
-        
-        var hideLabels = !!document.getElementById('hide-labels').checked;
-
-        var subnodes = ht.graph.getNode('236585_30').getSubnodes(0);
-        var map = [];
-        for (var i = 0; i < subnodes.length; i++) {
-            map.push(subnodes[i].id);
-        }
-        ht.op.removeNode(map.reverse(), {
-            type: type,
-            duration: duration,
-            fps: fps,
-            hideLabels:hideLabels,
-            onComplete: function(){
-                N = ht.graph.getClosestNodeToOrigin('current');
-            }
-        });
-        ht.controller.onAfterCompute();
-    };
-}
-
+    }
