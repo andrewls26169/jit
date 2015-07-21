@@ -1,4 +1,4 @@
-//end
+//Note from Andrew: this bit is NOT my own work, it was copied from git hub. This code generates hypertrees, when given nodes.
     //init Hypertree
     var ht = new $jit.Hypertree({
         //id of the visualization container
