@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hypertree - Weighted Graph Animation</title>
+
+<!-- Test CSS -->
+<link type="text/css" href="hypertree_files/base.css" rel="stylesheet">
+<link type="text/css" href="hypertree_files/Hypertree.css" rel="stylesheet">
+
+<!-- Add extra libraries -->
+<script language="javascript" type="text/javascript" src="hypertree_files/common.js"></script>
+<script language="javascript" type="text/javascript" src="hypertree_files/left.html"></script>
+<script language="javascript" type="text/javascript" src="hypertree.js"></script>
+
+<!-- Add test -->
+<script language="javascript" type="text/javascript" src="sample-tree2.js"></script>
+</head>
+
+<body onload="init();">
+<div id="container">
+    <div id="left-container">
+
+<a href="http://localhost:8080/testcase/Hypertree/6/" title="previous">previous</a>
+<a href="http://localhost:8080/testcase/Hypertree/8/" title="next">next</a>
+
+
+        <div class="text">
+        <h4>
+Weighted Graph Animation    
+        </h4> 
+
+            A static JSON graph structure is used for this animation.<br><br>
+            For each JSON node the "$type" and "$dim" parameters set the type of node to be plotted and its dimensions.<br><br>
+            Line weights are added programmatically, <em>onBeforePlotLine</em>.<br><br>
+            A <b>Back</b> transition is used instead of the linear transition for the animation.
+            
+        </div>
+
+        <div id="id-list"></div>
+
+    </div>
+    <div id="center-container">
+        <div id="infovis"><div style="position: relative; width: 600px; height: 600px;" id="infovis-canvaswidget"><canvas style="position: absolute; top: 0px; left: 0px; width: 600px; height: 600px;" height="600" width="600" id="infovis-canvas"></canvas><div style="overflow: visible; position: absolute; top: 0px; left: 0px; width: 600px; height: 0px;" id="infovis-label"><div style="position: absolute; cursor: pointer; left: 393px; top: 397px;" class="node" id="node0">node0 name</div><div style="position: absolute; cursor: pointer; left: 209px; top: 457px;" class="node" id="node1">node1 name</div><div style="position: absolute; cursor: pointer; left: 260px; top: 300px;" class="node" id="node2">node2 name</div><div style="position: absolute; cursor: pointer; left: 95px; top: 300px;" class="node" id="node3">node3 name</div><div style="position: absolute; cursor: pointer; left: 209px; top: 143px;" class="node" id="node4">node4 name</div><div style="position: absolute; cursor: pointer; left: 393px; top: 203px;" class="node" id="node5">node5 name</div></div></div></div>    
+    </div>
+    <div id="right-container">
+
+<div id="inner-details"><h4>node2 name</h4><b>Connections:</b><ul><li>node0 name</li><li>node1 name</li><li>node3 name</li><li>node4 name</li><li>node5 name</li></ul></div>
+
+    </div>
+<div style="left: 482.5px;" id="log">done</div>
+</div>
+
+
+<div class="jit-autoadjust-label" style="visibility: hidden; position: absolute; width: auto; height: auto;"></div></body></html>
