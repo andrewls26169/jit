@@ -14,7 +14,7 @@
         
         Edge: {
             overridable: true,
-            color: "#0f0"
+            color: "#088"
         },
         //calculate nodes offset
         offset: 0.2,
@@ -29,8 +29,7 @@
         onBeforePlotLine: function(adj){
             //Set random lineWidth for edges.
             if (!adj.data.$lineWidth) 
-                // adj.data.$lineWidth = Math.random() * 7 + 1;
-                adj.data.$lineWidth = 1;
+                adj.data.$lineWidth = Math.random() * 7 + 1;
         },
         
         onBeforeCompute: function(node){
