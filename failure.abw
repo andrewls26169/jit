@@ -9,7 +9,7 @@
 <!-- ======================================================================== -->
 
 <metadata>
-<m key="abiword.date_last_changed">Thu Aug 20 13:05:11 2015
+<m key="abiword.date_last_changed">Thu Aug 20 14:38:54 2015
 </m>
 <m key="abiword.generator">AbiWord</m>
 <m key="dc.creator">Andrew Luke Smith</m>
@@ -19,15 +19,15 @@
 </metadata>
 <rdf>
 </rdf>
-<history version="3" edit-time="1330" last-saved="1440072311" uid="9bee065c-4730-11e5-87cc-e59782829028">
-<version id="3" started="1440072200" uid="b551cbe4-4733-11e5-87cc-e59782829028" auto="0" top-xid="5"/>
+<history version="4" edit-time="6953" last-saved="1440077934" uid="9bee065c-4730-11e5-87cc-e59782829028">
+<version id="4" started="1440072200" uid="cced807e-4740-11e5-87cc-e59782829028" auto="0" top-xid="5"/>
 </history>
 <styles>
 <s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
 </styles>
-<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
 <section xid="2" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
-<p style="Normal" xid="3"><c props="font-size:14pt">Andrew Smith AQA Project: Update on how badly everything is going.</c></p>
+<p style="Normal" xid="3"><c props="font-size:14pt">Andrew SmithAQA Project: Update on how badly everything is going.</c></p>
 <p style="Normal" xid="1"><c props="font-size:12pt">Overall: although I have committed about 30 hours to my project: it is going catastrophically wrong. So far: I have some small preliminary argument maps, some hyperbolic tree nonsense that isn’t even my own work, and a method of  converting argument maps to hyperbolic trees... that doesn’t work! I also desperately need to catch up on the evidence and the formalities required to claim the marks.</c></p>
 <p style="Normal" xid="4"><c props="font-size:12pt"></c></p>
 <p style="Normal" xid="5"><c props="font-size:12pt">What I need is a complete project. This means I need to have successfully used the hyperbolic tree to display complete argument maps. I also need evidence on all the things I did, and credit for all the sources for the research I performed (and a complete Candidate Record Form). I will also need some visual aids to allow the project’s presentation to run smoothly. There will also need to be more research towards the project, so I can make better argument maps. Why did I think this was a good idea?</c></p>

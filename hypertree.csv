@@ -1,9 +1,10 @@
-ID,name,argument,node_to,type,Node_from1,Type1,Node_from2,Type_2
-1,Most rational explanation,"Scientific theories do not require large assumptions, so they are more reasonable and more likely to be true.",,,,,,
-2,not proof,This does not automatically make them true.,,,,,,
-3, Victorious despite tradition,"Science has always had more than its fair share of hate and scrutiny [evidence needed], however they still end up holding water and seeming true-er over time.",,,,,,
-4,Always correcting itself...,"Physics, by nature, is all about correcting hypotheses, so we never get answers.",,,,,,
-5,can't explain everything, "Physics FAILS to explain: how the big bang broke the laws of physics, all the totally-not-a-hoax paranormal activity, how a collection of particles (me) can perceive the universe around it, the answer to all the 'why's, or dark matter/energy.",,,,,,
-6,Empirical evidence,Experiments often back up scientific theories [evidence needed],,,,,,
-7,Bad science,"many experiments are biased toward the  hypothesis [examples needed], so evidence isn't always reliable",,,,,,
-8,no disproof,"Despite science's best efforts, it cannot completely rule out metaphysics, this could show that metaphysics may exist",,,,,,
+ID,Name,Text,To,Type
+1,Most rational explanation,"Scientific theories do not require large assumptions, so they are more reasonable and more likely to be true.",9,S
+2,not proof,This does not automatically make them true.,1,R
+3, Victorious despite tradition,"Science has always had more than its fair share of hate and scrutiny [evidence needed], however they still end up holding water and seeming true-er over time.",9,S
+4,Always correcting itself...,"Physics, by nature, is all about correcting hypotheses, so we never get answers.",9,R
+5,can't explain everything,"Physics FAILS to explain: how the big bang broke the laws of physics, all the totally-not-a-hoax paranormal activity, how a collection of particles (me) can perceive the universe around it, the answer to all the 'why's, or dark matter/energy.",9,R
+6,Empirical evidence,Experiments often back up scientific theories [evidence needed],9,S
+7,Bad science,"many experiments are biased toward the  hypothesis [examples needed], so evidence isn't always reliable",6,R
+8,no disproof,"Despite science's best efforts, it cannot completely rule out metaphysics, this could show that metaphysics may exist",9,R
+9,base argument,"There is no metaphysics, just things that can be explained through science rationally",,

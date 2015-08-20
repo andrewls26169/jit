@@ -1,120 +1,191 @@
 function init(){
     var json = [
     {
-        "adjacencies": [
-            {
-                "nodeTo": "2",
-                "data": {
-                    "weight": 1
-                }
-            },
-            {
-                "nodeTo": "3",
-                "data": {
-                    "weight": 1
-                }
-            },
-            {
-                "nodeTo": "4",
-                "data": {
-                    "weight": 1
-                }
-            },
-            {
-                "nodeTo": "5",
-                "data": {
-                    "weight": 1
-                }
-            }
-        ],
+        "name": "Most rational explanation",
+        "data": {
+            "text": "Scientific theories do not require large assumptions, so they are more reasonable and more likely to be true."
+        },
         "id": "1",
-        "data": {
-            "text": "Carbon"
-        },
-        "name": "c"
-    },
-    {
         "adjacencies": [
             {
-                "nodeTo": "1",
                 "data": {
                     "weight": 1
-                }
-            }
-        ],
-        "id": "2",
-        "data": {
-            "text": "H"
-        },
-        "name": "p"
-    },
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "1",
-                "data": {
-                    "weight": 1
-                }
-            }
-        ],
-        "id": "3",
-        "data": {
-            "text": "H2"
-        },
-        "name": "q"
-    },
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "1",
-                "data": {
-                    "weight": 1
-                }
-            }
-        ],
-        "id": "4",
-        "data": {
-            "text": "H3"
-        },
-        "name": "r"
-    },
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "1",
-                "data": {
-                    "weight": 1
-                }
+                },
+                "nodeTo": "9"
             },
             {
-                "nodeTo": "6",
                 "data": {
                     "$color": "#f00",
                     "weight": 1
-                }
+                },
+                "nodeTo": "2"
             }
-        ],
-        "id": "5",
-        "data": {
-            "text": "O"
-        },
-        "name": "s"
+        ]
     },
     {
+        "name": "not proof",
+        "data": {
+            "text": "This does not automatically make them true."
+        },
+        "id": "2",
         "adjacencies": [
             {
-                "nodeTo": "5",
                 "data": {
                     "$color": "#f00",
                     "weight": 1
-                }
+                },
+                "nodeTo": "1"
             }
-        ],
-        "id": "6",
+        ]
+    },
+    {
+        "name": " Victorious despite tradition",
         "data": {
-            "text": "H4"
+            "text": "Science has always had more than its fair share of hate and scrutiny [evidence needed], however they still end up holding water and seeming true-er over time."
         },
-        "name": "t"
+        "id": "3",
+        "adjacencies": [
+            {
+                "data": {
+                    "weight": 1
+                },
+                "nodeTo": "9"
+            }
+        ]
+    },
+    {
+        "name": "Always correcting itself...",
+        "data": {
+            "text": "Physics, by nature, is all about correcting hypotheses, so we never get answers."
+        },
+        "id": "4",
+        "adjacencies": [
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "9"
+            }
+        ]
+    },
+    {
+        "name": "can't explain everything",
+        "data": {
+            "text": "Physics FAILS to explain: how the big bang broke the laws of physics, all the totally-not-a-hoax paranormal activity, how a collection of particles (me) can perceive the universe around it, the answer to all the 'why's, or dark matter/energy."
+        },
+        "id": "5",
+        "adjacencies": [
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "9"
+            }
+        ]
+    },
+    {
+        "name": "Empirical evidence",
+        "data": {
+            "text": "Experiments often back up scientific theories [evidence needed]"
+        },
+        "id": "6",
+        "adjacencies": [
+            {
+                "data": {
+                    "weight": 1
+                },
+                "nodeTo": "9"
+            },
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "7"
+            }
+        ]
+    },
+    {
+        "name": "Bad science",
+        "data": {
+            "text": "many experiments are biased toward the  hypothesis [examples needed], so evidence isn't always reliable"
+        },
+        "id": "7",
+        "adjacencies": [
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "6"
+            }
+        ]
+    },
+    {
+        "name": "no disproof",
+        "data": {
+            "text": "Despite science's best efforts, it cannot completely rule out metaphysics, this could show that metaphysics may exist"
+        },
+        "id": "8",
+        "adjacencies": [
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "9"
+            }
+        ]
+    },
+    {
+        "name": "base argument",
+        "data": {
+            "text": "There is no metaphysics, just things that can be explained through science rationally"
+        },
+        "id": "9",
+        "adjacencies": [
+            {
+                "data": {
+                    "weight": 1
+                },
+                "nodeTo": "1"
+            },
+            {
+                "data": {
+                    "weight": 1
+                },
+                "nodeTo": "3"
+            },
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "4"
+            },
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "5"
+            },
+            {
+                "data": {
+                    "weight": 1
+                },
+                "nodeTo": "6"
+            },
+            {
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                },
+                "nodeTo": "8"
+            }
+        ]
     }
 ];
 //end
