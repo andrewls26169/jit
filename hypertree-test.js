@@ -1,98 +1,120 @@
 function init(){
     var json = [
     {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "Most rational explanation",
-        "argument": "Scientific theories do not require large assumptions, so they are more reasonable and more likely to be true.",
-        "ID": "1",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
-    },
-    {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "not proof",
-        "argument": "This does not automatically make them true.",
-        "ID": "2",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
-    },
-    {
-        "Type1": "",
-        "Node_from2": "",
-        "name": " Victorious despite tradition",
-        "argument": "Science has always had more than its fair share of hate and scrutiny [evidence needed], however they still end up holding water and seeming true-er over time.",
-        "ID": "3",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
-    },
-    {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "Always correcting itself...",
-        "argument": "Physics, by nature, is all about correcting hypotheses, so we never get answers.",
-        "ID": "4",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
-    },
-    {
-        "Type1": " or dark matter/energy.\"",
-        "Node_from2": "",
-        "name": "can't explain everything",
-        "argument": " \"Physics FAILS to explain: how the big bang broke the laws of physics",
-        "ID": "5",
-        "null": [
-            "",
-            "",
-            "",
-            ""
+        "adjacencies": [
+            {
+                "nodeTo": "2",
+                "data": {
+                    "weight": 1
+                }
+            },
+            {
+                "nodeTo": "3",
+                "data": {
+                    "weight": 1
+                }
+            },
+            {
+                "nodeTo": "4",
+                "data": {
+                    "weight": 1
+                }
+            },
+            {
+                "nodeTo": "5",
+                "data": {
+                    "weight": 1
+                }
+            }
         ],
-        "node_to": " all the totally-not-a-hoax paranormal activity",
-        "Node_from1": " the answer to all the 'why's",
-        "type": " how a collection of particles (me) can perceive the universe around it",
-        "Type_2": ""
+        "id": "1",
+        "data": {
+            "text": "Carbon"
+        },
+        "name": "c"
     },
     {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "Empirical evidence",
-        "argument": "Experiments often back up scientific theories [evidence needed]",
-        "ID": "6",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
+        "adjacencies": [
+            {
+                "nodeTo": "1",
+                "data": {
+                    "weight": 1
+                }
+            }
+        ],
+        "id": "2",
+        "data": {
+            "text": "H"
+        },
+        "name": "p"
     },
     {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "Bad science",
-        "argument": "many experiments are biased toward the  hypothesis [examples needed], so evidence isn't always reliable",
-        "ID": "7",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
+        "adjacencies": [
+            {
+                "nodeTo": "1",
+                "data": {
+                    "weight": 1
+                }
+            }
+        ],
+        "id": "3",
+        "data": {
+            "text": "H2"
+        },
+        "name": "q"
     },
     {
-        "Type1": "",
-        "Node_from2": "",
-        "name": "no disproof",
-        "argument": "Despite science's best efforts, it cannot completely rule out metaphysics, this could show that metaphysics may exist",
-        "ID": "8",
-        "node_to": "",
-        "Node_from1": "",
-        "type": "",
-        "Type_2": ""
+        "adjacencies": [
+            {
+                "nodeTo": "1",
+                "data": {
+                    "weight": 1
+                }
+            }
+        ],
+        "id": "4",
+        "data": {
+            "text": "H3"
+        },
+        "name": "r"
+    },
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "1",
+                "data": {
+                    "weight": 1
+                }
+            },
+            {
+                "nodeTo": "6",
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                }
+            }
+        ],
+        "id": "5",
+        "data": {
+            "text": "O"
+        },
+        "name": "s"
+    },
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "5",
+                "data": {
+                    "$color": "#f00",
+                    "weight": 1
+                }
+            }
+        ],
+        "id": "6",
+        "data": {
+            "text": "H4"
+        },
+        "name": "t"
     }
 ];
 //end
@@ -168,6 +190,9 @@ function init(){
             });
             html += "</ul>";
             $jit.id('inner-details').innerHTML = html;
+            // html = node text
+            var html = "<p>" + node.data.text + "</p>"
+            $jit.id('id-list').innerHTML = html;
         }
     });
     //load JSON graph.

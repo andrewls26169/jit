@@ -72,6 +72,9 @@
             });
             html += "</ul>";
             $jit.id('inner-details').innerHTML = html;
+            // html = node text
+            var html = "<p>" + node.data.text + "</p>"
+            $jit.id('id-list').innerHTML = html;
         }
     });
     //load JSON graph.
