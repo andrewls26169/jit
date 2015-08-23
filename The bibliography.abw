@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="15" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.9.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-GB; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Sat Aug 22 12:00:47 2015
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Andrew Luke Smith</m>
+<m key="dc.date">Sat Aug 22 11:46:37 2015
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="2" edit-time="1569" last-saved="1440241247" uid="63cbb910-48b9-11e5-96f6-d1f869ed8feb">
+<version id="2" started="1440240397" uid="0ab78382-48bd-11e5-96f6-d1f869ed8feb" auto="0" top-xid="7"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
+<section xid="6" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="7"><c props="font-size:16pt">Bibliography.</c></p>
+<p style="Normal" xid="1"><c props="font-size:14pt">Books as sources</c></p>
+<p style="Normal" xid="2"><c props="font-size:12pt">-John Hick: “The existence of God” P104-107 (Information on the Teleological argument)</c></p>
+<p style="Normal" xid="3"><c props="font-size:12pt">-</c><c>﻿Michael </c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-GB">Ruse:</c><c> “</c><c props="font-style:normal">Darwin and Design: Does Evolution Have a Purpose?</c><c> P122 (Teleological argument information)</c></p>
+<p style="Normal" xid="4"><c>-Alistair McGrath: “A fine tuned universe: the quest for God in science and theology (1st edition)” P176 (Carbon’s chemistry in teleological argument</c></p>
+<p style="Normal" xid="8"><c></c></p>
+<p style="Normal" xid="9"><c props="font-size:14pt">Websites as sources</c></p>
+<p style="Normal" xid="10"><c props="font-size:12pt">-en.wikipedia.org (gave quite a few good first ideas)</c></p>
+<p style="Normal" xid="11"><c props="font-size:12pt">-www.google.co.uk (the PageRankTM system helped me out when looking for useful sources on the internet)</c></p>
+<p style="Normal" xid="13"><c props="font-size:12pt">-github.com (a safe place to store the project, just in case something goes wrong)</c></p>
+<p style="Normal" xid="14"><c props="font-size:12pt">-github.com/philogb (provided me with the hypertree module for javascript, basically doing most of the technical part for me. It even had a creative commons licence so I was </c><c props="font-style:italic; font-size:12pt">actually</c><c props="font-style:normal; font-size:12pt"> able to use it.</c><c props="font-size:12pt">)</c></p>
+<p style="Normal" xid="15"><c props="font-size:12pt"></c></p>
+<p style="Normal" xid="12"><c props="font-size:12pt"></c></p>
+</section>
+</abiword>
