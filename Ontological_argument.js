@@ -27,6 +27,14 @@ function init(){
                     "$arg_type": "support", 
                     "weight": 1
                 }
+            }, 
+            {
+                "nodeTo": "7", 
+                "data": {
+                    "$arc_start": "7", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
             }
         ], 
         "data": {
@@ -141,12 +149,21 @@ function init(){
         "name": "Fiction"
     }, 
     {
-        "adjacencies": [], 
+        "adjacencies": [
+            {
+                "nodeTo": "1", 
+                "data": {
+                    "$arc_start": "7", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
         "data": {
-            "text": ""
+            "text": "God being the thing of which nothing greater can be thought is a defintion (and thus can't be false) and the idea of one imagining that being... Well I'm doing that right now while writing this argument map; so the concept of the premise of the thing that which nothing greater can be thought being beyond the imagination is clearly false! Therefore both premises are rendered undeniable (even if the second one was proven by apostrioiri reasoning)"
         }, 
         "id": "7", 
-        "name": ""
+        "name": "NO suspect premises"
     }, 
     {
         "adjacencies": [], 
