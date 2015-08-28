@@ -24,44 +24,45 @@ function init(){
                 "nodeTo": "5", 
                 "data": {
                     "$arc_start": "5", 
-                    "$arg_type": "support", 
-                    "weight": 1
-                }
-            }
-        ], 
-        "data": {
-            "text": "If one thinks of a being where nothing greater could be imagined (an omnipotent God): then \u2013 as something that is real is greater than the same thing in the imagination (real food has more calories than imaginary food) \u2013 we can be certain that such a being must exist because, if God doesn't exist, then the person has imagined something that is greater than the thing where nothing greater could be imagined; a contradiction of the first statement."
-        }, 
-        "id": "1", 
-        "name": "Anslem's Chapter 2 argument"
-    }, 
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "3", 
-                "data": {
-                    "$arc_start": "2", 
-                    "$arg_type": "support", 
-                    "weight": 1
-                }
-            }
-        ], 
-        "data": {
-            "text": "If one claims that it is impossible to think of a being of which nothing greater can exist, they are, in that statement, referring to a being of which nothing greater can exist, and therefore thinking of him/her for the purpose of comparison and thus contradicting themselves!"
-        }, 
-        "id": "2", 
-        "name": "The fool's comparison"
-    }, 
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "2", 
-                "data": {
-                    "$arc_start": "2", 
-                    "$arg_type": "support", 
-                    "weight": 1
+                    "$arg_type": "refute", 
+                    "weight": 1, 
+                    "$color": "#f00"
                 }
             }, 
+            {
+                "nodeTo": "7", 
+                "data": {
+                    "$arc_start": "7", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "1) It is impossible to destroy an omnipotent being; 2) for all individuals\u00b8 if it is a fact that it either does or doesn't exist\u00b8 there can be an explaination for why it does(n't) exist. 3) God doesn't exist (assumption for disproof by contradiction). 4) It's possible that there is an explaination for why God doesn't exist (from 2 and 3). 5) It is impossible to find an explaination for God not existing (as that would destroy an omnipotent being\u00b8 contradicting 1). 6) It is and isn't possible to find an explaination for God's non-existance. 7) Therefore God exists (contradiction 6 arises because premise 3 is assumed; thus proving premise 3 false)."
+        }, 
+        "id": "1", 
+        "name": "The weak sufficient reason version"
+    }, 
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "7", 
+                "data": {
+                    "$arc_start": "2", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "Our conception of God is an omnipotent being. Because an omnipotent being is un-surpassable, it cannot be defeated, therefore, such a being cannot be destroyed by any means."
+        }, 
+        "id": "2", 
+        "name": "Omnipotent=invincible"
+    }, 
+    {
+        "adjacencies": [
             {
                 "nodeTo": "1", 
                 "data": {
@@ -73,10 +74,10 @@ function init(){
             }
         ], 
         "data": {
-            "text": "The argument could also have the contradiction resolved by stating that the being of which nothing greater can be imagined can't actually be imagined. This makes the argument only prove we can't comprehent an omnipotent being, a fact we know as an omnipotent being is able to do things beyond the brain's comprehension (if it can't, it isn't omnipotent!), and is therefore incomprehensible."
+            "text": "Premise 1 implies that nothing can destroy a God that already exists, however reasoning step 5 assumes premise 1 means nothing can prevent a God that doesn't already exist from existing (by disproving it through an apriori argument such as the problem of evil). Therefore reasoning step 5 is out of context."
         }, 
         "id": "3", 
-        "name": "Implies thought is possible"
+        "name": "A probematic inference"
     }, 
     {
         "adjacencies": [
@@ -91,10 +92,10 @@ function init(){
             }
         ], 
         "data": {
-            "text": "The argument has a premise that something real is greater than something imaginary, BUT there are some cases where the imaginary version is the greater one, for example: a real mistake is worse than an imaginary one; and one could prefer psycology over biology (such as myself). Therefore something real isn't always greater than it's imaginary counterpart, so it could also apply to Gods (most atheists would prefer a nonexistant God over one that actually exists)."
+            "text": "Reasoning step 5 states that it is not actually possible for there to be an explaination for God's non-existence, but reasoning step 4 only states that it is hypothetically possible for such an explaination for God's non-existence. This means they do not directly clash as contradiction 6. For an example of this non-contradiction: it is hypothetically possible for me to create a perpetual motion machine, but it is not actually possibe as it would violate the law of conservation of matter and energy."
         }, 
         "id": "4", 
-        "name": "Existing doesn't imply greatness"
+        "name": "A non-contradiction?"
     }, 
     {
         "adjacencies": [
@@ -102,6 +103,41 @@ function init(){
                 "nodeTo": "1", 
                 "data": {
                     "$arc_start": "5", 
+                    "$arg_type": "refute", 
+                    "weight": 1, 
+                    "$color": "#f00"
+                }
+            }
+        ], 
+        "data": {
+            "text": "Conclusion 7 is an explaination for God to exist, but it is logically impossibe for a non-omnipotent being to create an omnipotent being (as such an omnipotent being would be immortal and thus infinite in time scince creation). Therefore if 5 can be inferred from 1, then 7 being false can also be inferred from 1!"
+        }, 
+        "id": "5", 
+        "name": "Unintended contradiction"
+    }, 
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "7", 
+                "data": {
+                    "$arc_start": "6", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "The idea that everything can (note this isn't must) have an explaination, called the weak principle of sufficient reason, is shown to be true through induction (everything we have encountered has been exlained, so it is probable that everthing we will encounter can be explained), and the idea of causation (a cause is a type of explaination, and everything is shown to have a cause). Also: the idea of everything being explainable fits well with the scientific method. "
+        }, 
+        "id": "6", 
+        "name": "Premise 2 holds water"
+    }, 
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "2", 
+                "data": {
+                    "$arc_start": "2", 
                     "$arg_type": "support", 
                     "weight": 1
                 }
@@ -110,43 +146,24 @@ function init(){
                 "nodeTo": "6", 
                 "data": {
                     "$arc_start": "6", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
+                    "$arg_type": "support", 
+                    "weight": 1
                 }
-            }
-        ], 
-        "data": {
-            "text": "By saying there is something greater than the imaginary God, we are comparing with a being that is nonexistant. This is suspect (according to C.D. Broard) as we aren't able to talk about the greatness of something nonexistant (that would require reference to it); unless, of course, it actually exists anyway."
-        }, 
-        "id": "5", 
-        "name": "Comparison implies others"
-    }, 
-    {
-        "adjacencies": [
+            }, 
             {
-                "nodeTo": "5", 
+                "nodeTo": "1", 
                 "data": {
-                    "$arc_start": "6", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
+                    "$arc_start": "7", 
+                    "$arg_type": "support", 
+                    "weight": 1
                 }
             }
         ], 
         "data": {
-            "text": "We do compare the greatness of fictional characters, with an example being screwattack's YouTube show 'death battle'. This means we can compare nonexistant beings."
-        }, 
-        "id": "6", 
-        "name": "Fiction"
-    }, 
-    {
-        "adjacencies": [], 
-        "data": {
-            "text": ""
+            "text": "Both premises are shown to be accurate"
         }, 
         "id": "7", 
-        "name": ""
+        "name": "The premises work"
     }, 
     {
         "adjacencies": [], 
@@ -154,22 +171,6 @@ function init(){
             "text": ""
         }, 
         "id": "8", 
-        "name": ""
-    }, 
-    {
-        "adjacencies": [], 
-        "data": {
-            "text": ""
-        }, 
-        "id": "9", 
-        "name": ""
-    }, 
-    {
-        "adjacencies": [], 
-        "data": {
-            "text": ""
-        }, 
-        "id": "10", 
         "name": ""
     }
 ];
