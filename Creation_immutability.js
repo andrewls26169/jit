@@ -3,66 +3,6 @@ function init(){
     {
         "adjacencies": [
             {
-                "nodeTo": "3", 
-                "data": {
-                    "$arc_start": "3", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
-                }
-            }, 
-            {
-                "nodeTo": "4", 
-                "data": {
-                    "$arc_start": "4", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
-                }
-            }, 
-            {
-                "nodeTo": "5", 
-                "data": {
-                    "$arc_start": "5", 
-                    "$arg_type": "support", 
-                    "weight": 1
-                }
-            }, 
-            {
-                "nodeTo": "7", 
-                "data": {
-                    "$arc_start": "7", 
-                    "$arg_type": "support", 
-                    "weight": 1
-                }
-            }
-        ], 
-        "data": {
-            "text": "If one thinks of a being where nothing greater could be imagined (an omnipotent God): then \u2013 as something that is real is greater than the same thing in the imagination (real food has more calories than imaginary food) \u2013 we can be certain that such a being must exist because, if God doesn't exist, then the person has imagined something that is greater than the thing where nothing greater could be imagined; a contradiction of the first statement."
-        }, 
-        "id": "1", 
-        "name": "Anslem's Chapter 2 argument"
-    }, 
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "3", 
-                "data": {
-                    "$arc_start": "2", 
-                    "$arg_type": "support", 
-                    "weight": 1
-                }
-            }
-        ], 
-        "data": {
-            "text": "If one claims that it is impossible to think of a being of which nothing greater can exist, they are, in that statement, referring to a being of which nothing greater can exist, and therefore thinking of him/her for the purpose of comparison and thus contradicting themselves!"
-        }, 
-        "id": "2", 
-        "name": "The fool's comparison"
-    }, 
-    {
-        "adjacencies": [
-            {
                 "nodeTo": "2", 
                 "data": {
                     "$arc_start": "2", 
@@ -71,7 +11,32 @@ function init(){
                 }
             }, 
             {
+                "nodeTo": "4", 
+                "data": {
+                    "$arc_start": "4", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "1) The world came into existence at a time (Big Bang) (premise) 2) The universe only exists because God willed it to (assumption for proof by contradiction) 3) God never changes (another assumption for proof by contradiction) 4) At Big Bang: God willed the universe into existence. (from 1 and 2) 5) There is a time before the big bang (Big Bang -1) where the universe didn't exist (from 1) 6) At Big Bang -1, God doesn't will the universe into existence (from 2 and 5) 7) God had a property at one time but not at another; therefore he/she is not immutable. This contradicts 3, therefore, God is impossible."
+        }, 
+        "id": "1", 
+        "name": "Creation vs immutability argument"
+    }, 
+    {
+        "adjacencies": [
+            {
                 "nodeTo": "1", 
+                "data": {
+                    "$arc_start": "2", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }, 
+            {
+                "nodeTo": "3", 
                 "data": {
                     "$arc_start": "3", 
                     "$arg_type": "refute", 
@@ -81,17 +46,17 @@ function init(){
             }
         ], 
         "data": {
-            "text": "The argument could also have the contradiction resolved by stating that the being of which nothing greater can be imagined can't actually be imagined. This makes the argument only prove we can't comprehent an omnipotent being, a fact we know as an omnipotent being is able to do things beyond the brain's comprehension (if it can't, it isn't omnipotent!), and is therefore incomprehensible."
+            "text": "Before the big bang (which is a contradictory statement), time did not exist, therefore 5 cannot be inferred from 1."
         }, 
-        "id": "3", 
-        "name": "Implies thought is possible"
+        "id": "2", 
+        "name": "No time"
     }, 
     {
         "adjacencies": [
             {
-                "nodeTo": "1", 
+                "nodeTo": "2", 
                 "data": {
-                    "$arc_start": "4", 
+                    "$arc_start": "3", 
                     "$arg_type": "refute", 
                     "weight": 1, 
                     "$color": "#f00"
@@ -99,15 +64,23 @@ function init(){
             }
         ], 
         "data": {
-            "text": "The argument has a premise that something real is greater than something imaginary, BUT there are some cases where the imaginary version is the greater one, for example: a real mistake is worse than an imaginary one; and one could prefer psycology over biology (such as myself). Therefore something real isn't always greater than it's imaginary counterpart, so it could also apply to Gods (most atheists would prefer a nonexistant God over one that actually exists)."
+            "text": "There is a variation of the argument that stated that at t1 an object does not exist (God isn't willing it to) but at t2 it does (God DOES will it to exist), and it follows the same logic but only with that one object, not the whole universe. This version does not require reasoning step 5 at all."
         }, 
-        "id": "4", 
-        "name": "Existing doesn't imply greatness"
+        "id": "3", 
+        "name": "Doesn't matter"
     }, 
     {
         "adjacencies": [
             {
                 "nodeTo": "1", 
+                "data": {
+                    "$arc_start": "4", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }, 
+            {
+                "nodeTo": "5", 
                 "data": {
                     "$arc_start": "5", 
                     "$arg_type": "support", 
@@ -118,52 +91,58 @@ function init(){
                 "nodeTo": "6", 
                 "data": {
                     "$arc_start": "6", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
-                }
-            }
-        ], 
-        "data": {
-            "text": "By saying there is something greater than the imaginary God, we are comparing with a being that is nonexistant. This is suspect (according to C.D. Broard) as we aren't able to talk about the greatness of something nonexistant (that would require reference to it); unless, of course, it actually exists anyway."
-        }, 
-        "id": "5", 
-        "name": "Comparison implies others"
-    }, 
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "5", 
-                "data": {
-                    "$arc_start": "6", 
-                    "$arg_type": "refute", 
-                    "weight": 1, 
-                    "$color": "#f00"
-                }
-            }
-        ], 
-        "data": {
-            "text": "We do compare the greatness of fictional characters, with an example being screwattack's YouTube show 'death battle'. This means we can compare nonexistant beings."
-        }, 
-        "id": "6", 
-        "name": "Fiction"
-    }, 
-    {
-        "adjacencies": [
-            {
-                "nodeTo": "1", 
-                "data": {
-                    "$arc_start": "7", 
                     "$arg_type": "support", 
                     "weight": 1
                 }
             }
         ], 
         "data": {
-            "text": "God being the thing of which nothing greater can be thought is a defintion (and thus can't be false) and the idea of one imagining that being... Well I'm doing that right now while writing this argument map; so the concept of the thing that which nothing greater can be thought being simply beyond the imagination is clearly false! Therefore both premises are rendered undeniable (even if the second one was proven by apostrioiri reasoning)"
+            "text": "The comparison 7 doesn't hold water because it requires that we compare God and time. A comparison requires knowledge of both the things we are comparing (according to Augustine), but quantum physicists can't get a grip on how time works and some religions, such as Islam, state that we don't know how God works, either."
+        }, 
+        "id": "4", 
+        "name": "We lack knowledge"
+    }, 
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "4", 
+                "data": {
+                    "$arc_start": "5", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "Because God is immortal, his/her perception of time would, according to Augustine, is  that God percieves all time at once (which makes sense for an omniscient being; so he wills the universe to 'exist from Big Bang to End', NOT 'exist' from Big Bang to End. This means that although the objects change, God doesn't; he just sets objects to stop and start existing at specific times and doesn't change them afterwards."
+        }, 
+        "id": "5", 
+        "name": "God's time is unlike ours"
+    }, 
+    {
+        "adjacencies": [
+            {
+                "nodeTo": "4", 
+                "data": {
+                    "$arc_start": "6", 
+                    "$arg_type": "support", 
+                    "weight": 1
+                }
+            }
+        ], 
+        "data": {
+            "text": "In our perception of time: the present has a duration of 0. Also, all beings that exist are in the present. However, because the present has no duration \u2013 and thus has a time-volume (or whatever you're supposed to call it) of 0m\u00b3s, it can't fit any objects that have volume and duration (i.e. anything that actually exists!) inside it. Therefore; unless our perception of time is flawed: nothing can exist, contradicting \u201cI think therefore I am\u201d."
+        }, 
+        "id": "6", 
+        "name": "Present? More like Paradox"
+    }, 
+    {
+        "adjacencies": [], 
+        "data": {
+            "text": ""
         }, 
         "id": "7", 
-        "name": "NO suspect premises"
+        "name": ""
     }, 
     {
         "adjacencies": [], 
@@ -171,22 +150,6 @@ function init(){
             "text": ""
         }, 
         "id": "8", 
-        "name": ""
-    }, 
-    {
-        "adjacencies": [], 
-        "data": {
-            "text": ""
-        }, 
-        "id": "9", 
-        "name": ""
-    }, 
-    {
-        "adjacencies": [], 
-        "data": {
-            "text": ""
-        }, 
-        "id": "10", 
         "name": ""
     }
 ];
